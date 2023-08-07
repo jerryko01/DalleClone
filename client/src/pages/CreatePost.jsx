@@ -1,7 +1,11 @@
+import React from 'react'
+
 const CreatePost = () => {
     return (
-        <div>CreatePost</div>
+        <div>
+            <div>CreatePost</div>
+        </div>
     )
 }
 
-export default CreatePost;
+export default CreatePost
