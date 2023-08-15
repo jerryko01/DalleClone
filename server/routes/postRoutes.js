@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 import { v2 as cloudinary } from "cloudinary";
 
 import Post from "../mongodb/models/post.js";
-require('dotenv').config({ path: '../../.env' });
+dotenv.config()
 
 const router = express.Router();
 
