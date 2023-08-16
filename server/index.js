@@ -7,7 +7,7 @@ import dalleRoutes from "./routes/dalleRoutes.js"
 
 dotenv.config()
 const corsOptions = {
-    origin: "https://dalle-clone-project-frontend.onrender.com/"
+    origin: "https://dalle-clone-project-frontend.onrender.com"
 }
 const app = express();
 app.use(cors((corsOptions)));
