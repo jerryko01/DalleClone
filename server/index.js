@@ -6,9 +6,11 @@ import postRoutes from "./routes/postRoutes.js"
 import dalleRoutes from "./routes/dalleRoutes.js"
 
 dotenv.config()
-
+const corsOptions = {
+    origin: "https://dalle-clone-project-frontend.onrender.com/"
+}
 const app = express();
-app.use(cors());
+app.use(cors((corsOptions)));
 app.use(express.json({ limit: "50mb" }));
 app.use("/api/v1/post", postRoutes);
 app.use("/api/v1/dalle", dalleRoutes);
